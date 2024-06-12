@@ -1,0 +1,1 @@
+# Tugas-Probabilitas-Menghitung-Chi-Square-dengan-Pendekatan
