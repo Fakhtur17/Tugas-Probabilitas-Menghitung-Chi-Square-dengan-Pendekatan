@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Peluang Kontinu chi-square</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--my style -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--navbar start -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo"
+        >Sebaran Peluang<span> Chi-Square</span></a
+      >
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Pengertian</a>
+        <a href="#menu">Rumus </a>
+        <a href="#contact">Perhitungan</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!--navbar end -->
+    <!--Hero Section Start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Sebaran peluang kontinu <span> chi-square</span></h1>
+        <p>Kelompok 9</p>
+      </main>
+    </section>
+    <!--Hero Section end -->
+    <!-- Menu Section Start-->
+    <section id="foto" class="foto">
+      <h2><span>Anggota</span> Kami</h2>
+      <p></p>
+
+      <div class="row">
+        <div class="foto-card">
+          <img src="img/menu/Adelia.jpg" alt="Sepatu" class="foto-card-img" />
+          <h3 class="foto-card-img">-Adelia Najmi Raissa</h3>
+          <p class="foto-card-img">H1D023007</p>
+        </div>
+        <div class="foto-card">
+          <img src="img/menu/Fakhtur.jpg" alt="Sepatu" class="foto-card-img" />
+          <h3 class="menu-card-img">-Ramadhan Fakhtur R</h3>
+          <p class="menu-card-img">H1D023010</p>
+        </div>
+        <div class="foto-card">
+          <img
+            src="img/menu/Amel.jpg"
+            alt="Sepatu"
+            class="foto-card-img"
+          />
+          <h3 class="foto-card-img">-Risky Amelia Putri</h3>
+          <p class="foto-card-img">H1D023017</p>
+        </div>
+        <div class="foto-card">
+          <img
+            src="img/menu/FOTO.jpg"
+            alt="Sepatu"
+            class="foto-card-img"
+          />
+          <h3 class="foto-card-img">-Alfan Fauzan R</h3>
+          <p class="foto-card-img">H1D023039</p>
+        </div>
+    </section>
+    <!-- Menu Section end -->
+
+    <!-- About Section Start-->
+    <section id="about" class="about">
+      <h2><span>Pengertian</span> chi-square</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/Tentang_kami.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Apa itu Sebaran Peluang kontinu chi-squared?</h3>
+          <p>
+            Sebaran peluang kontinu chi-squared adalah distribusi probabilitas
+            yang sering digunakan dalam statistika untuk menguji hipotesis dan
+            melakukan estimasi parameter. Distribusi ini muncul dari jumlah
+            kuadrat variabel acak yang terdistribusi secara normal standar.
+            Dalam praktiknya, sebaran chi-squared digunakan dalam uji
+            chi-squared untuk menentukan perbedaan yang signifikan antara dua
+            atau lebih kelompok data, serta dalam berbagai analisis statistik
+            lainnya. Ini adalah alat penting dalam statistika inferensial yang
+            digunakan di berbagai bidang ilmu.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end-->
+
+    <!-- Menu Section Start-->
+    <section id="menu" class="menu">
+      <h2><span>Rumus</span> Pendekatan</h2>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/rumus.jpg" alt="Rumus pendekatan" />
+        </div>
+        <div class="content">
+          <h3>Rumus menggunakan pendekatan</h3>
+          <p>
+            Peluang pendekatan (x₁ < x < x₂) Ini mengindikasikan bahwa kita
+            sedang mempertimbangkan interval antara 𝑥 1 x 1 ​ dan 𝑥 2 x 2 ​ . S
+            ( Sebuah jarak ) = x₁ + ( x₂ - x₁) / 3. Dalam konteks pendekatan
+            numerik seperti metode Simpson, seharusnya ada dua titik di mana
+            interval dibagi menjadi subinterval. Luas = (P₁ + P₂ )s / 2. Namun,
+            ini bisa diartikan sebagai upaya untuk menggunakan metode titik
+            tengah atau metode trapesium.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end -->
+    <!-- Contact Section start-->
+    <section id="contact" class="contact">
+      <h2><span>Perhi</span>tungan</h2>
+
+      <div class="container">
+        <label for="derajatKebebasan">Derajat Kebebasan (ν):</label>
+        <input type="number" id="derajatKebebasan" min="1" step="1" value="2" />
+        <label for="nilaiX1">Nilai X1:</label>
+        <input type="number" id="nilaiX1" min="0" step="0.1" value="1" />
+        <label for="nilaiX2">Nilai X2:</label>
+        <input type="number" id="nilaiX2" min="0" step="0.1" value="2" />
+        <button onclick="hitungChiKuadrat()">Hitung</button>
+        <svg id="grafikChiKuadrat" width="400" height="200"></svg>
+        <div class="result" id="nilaiP"></div>
+        <div class="result" id="nilaiS"></div>
+        <div class="result" id="luasTrapesium"></div>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+    <!--feather icons-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--my java script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
